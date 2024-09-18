@@ -14,3 +14,7 @@ let accountPassword = "12345";
 console.log(`Account ID: ${accountId}`);
 console.log(`Account Email: ${accountEmail}`);
 console.log(`Account Password: ${accountPassword}`);
+
+// to view data in table form
+
+console.table([accountId, accountEmail, accountPassword])
