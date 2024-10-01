@@ -1,4 +1,4 @@
-// Day 15: Control Flow with If-Else, For, While, Do-While, Break, and Continue
+// Day 15: Control Flow with If-Else, For, While, Do-While, Break, Continue, and Switch
 
 // 1. If-Else Condition Example:
 let x = 10;
@@ -94,3 +94,71 @@ do {
     console.log("Iteration: ", i);  // Log all iterations except 4 and stop at 7
     i++;
 } while (i < 10);
+
+// 9. Switch Statement Example:
+let fruit = "apple";
+
+switch (fruit) {
+    case "apple":
+        console.log("You chose apple!");
+        break; // Exit after matching the case
+    case "banana":
+        console.log("You chose banana!");
+        break; // Exit after matching the case
+    case "orange":
+        console.log("You chose orange!");
+        break; // Exit after matching the case
+    default:
+        console.log("Unknown fruit!"); // If no cases match, this will run
+}
+
+// 10. Switch Statement without Break (Fall-Through Behavior):
+let day = "Monday";
+
+switch (day) {
+    case "Monday":
+    case "Wednesday":
+    case "Friday":
+        console.log("It's a busy day!");
+        break; // This break applies to all the above cases
+    case "Saturday":
+    case "Sunday":
+        console.log("It's a weekend, time to relax!");
+        break; // Break after matching Saturday or Sunday
+    default:
+        console.log("Invalid day!");
+}
+
+// 11. Switch with Different Data Types:
+let score = 100;
+
+switch (true) {
+    case score > 90:
+        console.log("Excellent score!");
+        break;
+    case score > 75:
+        console.log("Good score!");
+        break;
+    case score > 50:
+        console.log("Average score!");
+        break;
+    default:
+        console.log("Score below average.");
+}
+
+// 12. Switch as a Replacement for If-Else:
+let role = "admin";
+
+switch (role) {
+    case "admin":
+        console.log("You have full access.");
+        break;
+    case "editor":
+        console.log("You can edit content.");
+        break;
+    case "viewer":
+        console.log("You can view content.");
+        break;
+    default:
+        console.log("No access rights assigned.");
+}
